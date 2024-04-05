@@ -12,5 +12,4 @@ function kopiereDateienQuelleZiel(quellOrdner: string, zielOrdner: string) {
 }
 
 // Beispielaufruf
-kopiereDateienQuelleZ
 kopiereDateienQuelleZiel('./input', './output');
