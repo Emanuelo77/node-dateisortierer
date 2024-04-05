@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-function kopiereDateienQuelleZiel(quellOrdner, zielOrdner) {
+function kopiereDateienQuelleZiel(quellOrdner: string, zielOrdner: string) {
     const dateien = fs.readdirSync(quellOrdner);
     dateien.forEach(datei => {
         const dateiPfad = path.join(quellOrdner, datei);
@@ -13,4 +13,4 @@ function kopiereDateienQuelleZiel(quellOrdner, zielOrdner) {
 
 // Beispielaufruf
 kopiereDateienQuelleZ
-kopiereDateienQuelleZiel('./quelleOrdner', './zielOrdner');
+kopiereDateienQuelleZiel('./input', './output');
